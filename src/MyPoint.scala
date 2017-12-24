@@ -13,5 +13,8 @@ class MyPoint(private val x: Int, private val y: Int) {
     math.toDegrees(theta)
   }
 
+  def equals(point: MyPoint): Boolean =
+    getX() == point.getX() && getY() == point.getY()
+
   override def toString: String = getClass.getName + "(" + getX() + ", " + getY() + ")"
 }

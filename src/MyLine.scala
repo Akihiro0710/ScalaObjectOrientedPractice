@@ -1,9 +1,9 @@
 /**
   * Created by ta on 2017/12/24.
   */
-class MyLine(startX: Int, startY: Int, endX: Int, endY: Int) {
-  private val startPoint = new MyPoint(startX, startY)
-  private val endPoint = new MyPoint(endX, endY)
+class MyLine(startPoint: MyPoint, endPoint: MyPoint) {
+  def this(startX: Int, startY: Int, endX: Int, endY: Int) =
+    this(new MyPoint(startX, startY), new MyPoint(endX, endY))
 
   def getStartX(): Int = startPoint.getX()
 

@@ -22,5 +22,5 @@ class MyPoint(private val x: Int, private val y: Int) {
     math.sqrt(List(diffX, diffY).map(i => math.pow(i, 2)).sum)
   }
 
-  override def toString: String = getClass.getName + "(" + getX() + ", " + getY() + ")"
+  override def toString: String = getClass.getName + Array(getX(), getY()).mkString("(", ", ", ")")
 }

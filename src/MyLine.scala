@@ -15,5 +15,5 @@ class MyLine(startPoint: MyPoint, endPoint: MyPoint) {
 
   def distance(): Double = startPoint.distance(endPoint)
 
-  override def toString: String = getClass.getName + "(" + startPoint + ", " + endPoint + ")"
+  override def toString: String = getClass.getName + Array(startPoint, endPoint).mkString("(", ", ", ")")
 }

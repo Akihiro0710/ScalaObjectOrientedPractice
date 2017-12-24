@@ -3,6 +3,6 @@
   */
 object Main {
   def main(args: Array[String]): Unit = {
-    println(new MyLine(3, 4, 5, 6))
+    println(new MyTriangle(0, 0, 3, 0, 0, 4))
   }
 }

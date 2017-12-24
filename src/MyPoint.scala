@@ -12,4 +12,6 @@ class MyPoint(private val x: Int, private val y: Int) {
     val theta = math.atan2(getX(), getY())
     math.toDegrees(theta)
   }
+
+  override def toString: String = getClass.getName + "(" + getX() + ", " + getY() + ")"
 }
